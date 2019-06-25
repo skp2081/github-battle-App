@@ -18,7 +18,9 @@ class Popular extends React.Component {
 			.then(res => res.json())
 			.then(({items}) => this.setState({repos: items, loading: false}));
   }
-  //update lang.... 
+
+  //update langauges
+  
   updateLanguage(lang){
     this.setState(function(){
       return {
